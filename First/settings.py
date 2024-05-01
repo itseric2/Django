@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS = ["C:/Users/TOSHIBA/Desktop/Django-projects/First/First/Web-Preview/static"]
 
 # Application definition
 
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'First.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/TOSHIBA/Desktop/Django-projects/First/First/Web-Preview"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

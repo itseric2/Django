@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/styleregister.css' %}">
+</head>
+<body>
+
+    <div class="container-primary">
+        <div class="container-register">
+            <form action="#">
+                <div class="form-register">
+                    <label for="cargo">Cargo:</label>
+                    <select id="cargo" name="cargo">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="profesor">Profesor</option>
+                    </select>
+                </div>
+                <div class="form-register">
+                    <label for="DDI">Documento De Identidad</label>
+                    <select name="Documento De Identidad" id="DDI">
+                        <option value="CC">Cedula Ciudadana</option>
+                        <option value="TI">Tarjeta De Identidad</option>
+                        <option value="DE">Documento De Extrajeria</option>
+                    </select>
+                </div>
+                <div class="form-register">
+                    <label for="NDD">Número De Documento</label>
+                    <input type="text" id="NDD" name="Número De Documento">
+                </div>
+                <div class="form-register">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="form-register">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </div>
+                <div class="form-register">
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad">
+                </div>
+                <div class="form-register">
+                    <label for="gmail">Gmail</label>
+                    <input type="email" id="gmail" name="gmail">
+                </div>
+                <div class="form-register">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono">
+                </div>
+                <div class="form-register">
+                    <label for="institucion">Institución</label>
+                    <input type="text" id="institucion" name="institucion">
+                </div>
+                <div class="form-register">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXA SERCH</title>
+  <link rel="stylesheet" href="{% static '/style.css' %}">
+</head>
+<body>
+  <div class="container-primary"> 
+    <div class="container">
+        <h1>EXA SERCH</h1>
+
+        <form action="#">
+        <div class="form-group">
+            <label for="institucion">Institución</label>
+            <input type="text" id="institucion" name="institucion">
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena">
+        </div>
+
+        <div class="buttons">
+            <a href="registro.html" class="btn-registro">Registrarse</a>
+            <a href="iniciarsesion.html" class="btn-login">Iniciar sesión</a>
+        </div>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
