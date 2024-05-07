@@ -83,3 +83,7 @@ body {
   .btn-login:hover {
     background-color: #0056b3;
   }
+
+
+  /* return render(request, "prototype.html") Este trozo de código hace parte de el programa view.py 
+                                              en la función prueba (Aún no es necesario usarlo)*/

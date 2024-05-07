@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif; /* Cambiar la fuente según sea necesario */
+    background-color: #f0f0f0; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+.container-primary {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 115vh; /* Ajusta el alto a la pantalla */
+}
+
+.container-register {
+    background-color: #fff; /* Color de fondo del contenedor del formulario */
+    padding: 20px;
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.form-register {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /* Para que cada label tenga su propia línea */
+    margin-bottom: 5px; /* Espacio entre los labels y los input */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    padding: 8px; /* Espacio interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+    box-sizing: border-box; /* Incluye el borde en el ancho total */
+    /* background-color: aquamarine; */
+}
+
+input[type="submit"] {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    padding: 10px; /* Espacio interno */
+    background-color: #007bff; /* Color de fondo del botón 007bff */
+    color: #0f0f0f; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}

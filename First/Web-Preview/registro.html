@@ -1,5 +1,6 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,12 +54,35 @@
                     <label for="institucion">Institución</label>
                     <input type="text" id="institucion" name="institucion">
                 </div>
-                <div class="form-register">
-                    
+                <div class="form-register" id="campo-grado">
+                    <label for="grados">Grado:</label>
+                    <select name="grados" id="grados">
+                        {% for grado in grados %}
+                        <option value="{{ grado }}">{{ grado }}</option>
+                        {% endfor %}
+                    </select>
                 </div>
+                <input type="submit" value="Registrar">
             </form>
         </div>
     </div>
-    
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var campoGrado = document.getElementById('campo-grado');
+            document.getElementById('cargo').addEventListener('change', function() {
+                var seleccionado = this.value;
+
+                if (seleccionado === 'profesor') {
+                    campoGrado.style.display = 'none';
+                } else {
+                    campoGrado.style.display = 'block';
+                }
+            });
+
+            // Mostrar el campo de grado al cargar la página
+            campoGrado.style.display = 'block';
+        });
+    </script> Este trozo de código lo investigue por lo tanto no lo tendre en cuenta hasta aprender js-->
 </body>
 </html>
